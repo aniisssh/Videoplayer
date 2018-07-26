@@ -1,0 +1,89 @@
+#player{
+	background-color: rgb(30,30,30); /*dark grey */
+	display: inline-block;
+
+	user-select: none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+}
+img{
+	background-color: rgb(70,70,70); /*light grey */
+}
+img:hover{
+	background-color: rgb(50,170,220);
+}
+img, #pbar-container, #sbar-container{
+	cursor: pointer;
+}
+
+#video-container {
+	width: 640px;
+	height: 320px;
+	position: relative; /*To overlap the screen*/
+}
+	video{
+		height: 100%;
+		width: 100%;
+	}
+	#screen {
+		height: 100%;
+		width: 100%;
+		line-height: 360px;
+		text-align: center;
+		position: absolute; /*To overlapp the screen*/
+		z-index: 1 !important; /* t]This make screen always on top of video*/ 
+		
+	}
+
+
+		#screen img{
+			background-color: rgb(70,70,70);
+			vertical-align: middle;
+		}
+
+#pbar-container{
+	height: 5px;
+	margin-top: 2px;
+	padding-bottom: 2px;
+	background-color: rgb(70,70,70);
+}
+#pbar{
+	height: 5px;
+	width: 0%;
+	background-color: rgb(50,170,220);
+}
+#buttons-container{
+	height: 50px;
+}
+ #buttons-container > *{
+ 	display: inline-block;
+ 	height: 100%;
+ 	vertical-align: middle;
+ 	margin: 0 10px;
+ 	
+ }
+
+ #time-field{
+ 	color: rgb(50,170,220);
+ 	line-height: 50px;
+ 	cursor: default;
+
+ }
+ #sound-button{
+ 	margin-right: 0;
+ }
+ #sbar-container
+ {
+ 	width: 100px;
+ 	height: 5px;
+ 	background-color: rgb(70,70,70);
+ }
+ #sbar{
+ 	height: 100%;
+ 	width: 100%;
+ 	background-color: rgb(50,170,220);
+ }
+ #fullscreen-button{
+ 	float: right;
+ }
